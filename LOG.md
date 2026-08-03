@@ -25,3 +25,11 @@ Nested loops build the bar graph — outer walks bins, inner draws characters.
 Changed the /3 divisor and watched the bars scale.
 Serial Monitor was blank after upload — pressing RESET re-runs setup().
 Better fix: while (!Serial) waits for the connection.
+
+## Day 5 — Functions
+Functions live outside setup() and loop().
+void = does something. int = returns a number, sent with return.
+Parameters in the brackets pass values in.
+Rewrote the bar graph with printBinLabel() and printBar() — the main loop
+now reads like a description instead of a wall of code.
+
