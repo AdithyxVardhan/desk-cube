@@ -33,3 +33,15 @@ Parameters in the brackets pass values in.
 Rewrote the bar graph with printBinLabel() and printBar() — the main loop
 now reads like a description instead of a wall of code.
 
+## Day 6 — millis()
+delay() freezes the whole chip. millis() counts up in the background,
+so instead of waiting you ask "has enough time passed yet".
+Pattern: if (millis() - lastX >= interval) { lastX = millis(); ... }
+Must be unsigned long — int overflows after ~32 seconds.
+Timestamp variables go above setup(), or they reset every pass.
+Two tasks at 200ms and 1500ms ran together with no delay().
+Adding one delay(2000) wrecked both. Deleted it, both recovered.
+Still to do: write the pattern from memory.
+
+Note: uploads fail if the Serial Monitor is open. Close it first, or
+unplug and replug the board.
