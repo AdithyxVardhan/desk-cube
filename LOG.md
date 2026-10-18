@@ -45,3 +45,5 @@ Still to do: write the pattern from memory.
 
 Note: uploads fail if the Serial Monitor is open. Close it first, or
 unplug and replug the board.
+
+"Board stopped enumerating after the display test upload. Backlight glows, so VCC/GND are good. Not visible to macOS at all — ls /dev/cu. shows nothing. To try: fresh boot, different cable."*
